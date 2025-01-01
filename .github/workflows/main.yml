@@ -1,6 +1,11 @@
 name: Pipeline
 
-on: [push]  # Triggers the workflow on push events
+on:
+  push:
+    branches:
+     - master
+  pull_request:
+    - master
 
 jobs:
   pipeline:
